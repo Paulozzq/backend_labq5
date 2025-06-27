@@ -14,8 +14,8 @@ app.use('/api/productos', productosRoutes);
 sequelize.sync()
   .then(() => {
     console.log('Base de datos sincronizada');
-    app.listen(3001, () => {
-      console.log('Backend corriendo en http://localhost:3001');
+    app.listen(80, () => {
+      console.log('Backend corriendo en http://localhost');
     });
   })
   .catch(err => {
